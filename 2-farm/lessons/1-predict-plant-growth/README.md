@@ -6,7 +6,7 @@
 
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/9)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/9)
 
 ## Introduction
 
@@ -110,7 +110,7 @@ On the first day above the base temperature, the following temperatures were mea
 | Maximum     | 16      |
 | Minimum     | 12      |
 
-Plugging these numbers in to our calculation:
+Plugging these numbers into our calculation:
 
 * T<sub>max</sub> = 16
 * T<sub>min</sub> = 12
@@ -257,7 +257,7 @@ For these, find if there are sensors that can measure them. What about actuators
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/10)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/10)
 
 ## Review & Self Study
 

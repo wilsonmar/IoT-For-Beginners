@@ -4,7 +4,7 @@
 > Sketchnote by [Nitya Narasimhan](https://github.com/nitya). Click the image for a larger version.
 
 ## <div dir="rtl">اختبار ما قبل المحاضرة</div>
-[اختبار ما قبل المحاضرة](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/7)
+[اختبار ما قبل المحاضرة](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/7)
 
 ## <div dir="rtl">المقدمة</div>
 
@@ -148,7 +148,7 @@ MQTT لديها وسيط واحد وعملاء متعددين. يتصل جميع
 
     > 💁 لك مطلق الحرية في استخدام أي محرر Python IDE أو محرر لهذه الدروس إذا كان لديك أداة مفضلة ، ولكن الدروس ستعطي إرشادات تستند إلى استخدام VS Code.
 
-1. قم بتثبيت امتداد VS Code Pylance. هذا امتداد لـ VS Code الذي يوفر دعم لغة Python. راجع <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance&WT.mc_id=academic-17441-jabenn">Pylance extension documentation</a> للحصول على إرشادات حول تثبيت هذا الامتداد في VS Code.
+1. قم بتثبيت امتداد VS Code Pylance. هذا امتداد لـ VS Code الذي يوفر دعم لغة Python. راجع <a href="https://marketplace.visualstudio.com/items?WT.mc_id=academic-17441-jabenn&itemName=ms-python.vscode-pylance">Pylance extension documentation</a> للحصول على إرشادات حول تثبيت هذا الامتداد في VS Code.
 
 #### تكوين بيئة Python الافتراضية
 
@@ -440,7 +440,7 @@ MQTT لديها وسيط واحد وعملاء متعددين. يتصل جميع
 
 ## مسابقة ما بعد المحاضرة
 
-[مسابقة ما بعد المحاضرة](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/8)
+[مسابقة ما بعد المحاضرة](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/8)
 
 ## مراجعة ودراسة ذاتية
 

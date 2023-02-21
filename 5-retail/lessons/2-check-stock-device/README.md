@@ -6,7 +6,7 @@
 
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/39)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/39)
 
 ## Introduction
 
@@ -120,7 +120,7 @@ You can use bounding boxes combined with probabilities to evaluate how accurate 
 
 ![Two bonding boxes overlapping a can of tomato paste](../../../images/overlap-object-detection.png)
 
-In the example above, one bounding box indicated a predicted can of tomato paste at 78.3%. A second bounding box is slightly smaller, and is inside the first bounding box with a probability of 64.3%. Your code can check the bounding boxes, see they overlap completely, and ignore the lower probability as there is no way one can can be inside another.
+In the example above, one bounding box indicated a predicted can of tomato paste at 78.3%. A second bounding box is slightly smaller, and is inside the first bounding box with a probability of 64.3%. Your code can check the bounding boxes, see they overlap completely, and ignore the lower probability as there is no way one can be inside another.
 
 ✅ Can you think of a situation where is it valid to detect one object inside another?
 
@@ -165,7 +165,7 @@ Maybe even take this further and detect stock side by side on the same shelf, an
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/40)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/40)
 
 ## Review & Self Study
 

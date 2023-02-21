@@ -4,9 +4,17 @@
 
 > Sketchnote by [Nitya Narasimhan](https://github.com/nitya). Click the image for a larger version.
 
+This lesson was taught as part of the [Hello IoT series](https://youtube.com/playlist?list=PLmsFUfdnGr3xRts0TIwyaHyQuHaNQcb6-) from the [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=academic-17441-jabenn). The lesson was taught as 2 videos - a 1 hour lesson, and a 1 hour office hour diving deeper into parts of the lesson and answering questions.
+
+[![Lesson 2: A deeper dive into IoT](https://img.youtube.com/vi/t0SySWw3z9M/0.jpg)](https://youtu.be/t0SySWw3z9M)
+
+[![Lesson 2: A deeper dive into IoT - Office hours](https://img.youtube.com/vi/tTZYf9EST1E/0.jpg)](https://youtu.be/tTZYf9EST1E)
+
+> 🎥 Click the images above to watch the videos
+
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/3)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/3)
 
 ## Introduction
 
@@ -116,7 +124,7 @@ RAM is the memory used by the program to run, containing variables allocated by 
 
 > 🎓 RAM is used to run your program and is reset when there is no power
 
-Like with the CPU, the memory on a microcontroller is orders of magnitude smaller than a PC or Mac. A typical PC might have 8 Gigabytes (GB) of RAM, or 8,000,0000,000 bytes, with each byte enough space to store a single letter or a number from 0-255. A microcontroller would have only Kilobytes (KB) of RAM, with a kilobyte being 1,000 bytes. The Wio terminal mentioned above has 192KB of RAM, or 192,000 bytes - more than 40,000 times less than an average PC!
+Like with the CPU, the memory on a microcontroller is orders of magnitude smaller than a PC or Mac. A typical PC might have 8 Gigabytes (GB) of RAM, or 8,000,000,000 bytes, with each byte enough space to store a single letter or a number from 0-255. A microcontroller would have only Kilobytes (KB) of RAM, with a kilobyte being 1,000 bytes. The Wio terminal mentioned above has 192KB of RAM, or 192,000 bytes - more than 40,000 times less than an average PC!
 
 The diagram below shows the relative size difference between 192KB and 8GB - the small dot in the center represents 192KB.
 
@@ -243,7 +251,7 @@ The challenge in the last lesson was to list as many IoT devices as you can that
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/4)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/4)
 
 ## Review & Self Study
 

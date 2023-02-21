@@ -16,7 +16,7 @@ Install the required software.
 
     > 💁 You are free to use any Python IDE or editor for these lessons if you have a preferred tool, but the lessons will give instructions based off using VS Code.
 
-1. Install the VS Code Pylance extension. This is an extension for VS Code that provides Python language support. Refer to the [Pylance extension documentation](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance&WT.mc_id=academic-17441-jabenn) for instructions on installing this extension in VS Code.
+1. Install the VS Code Pylance extension. This is an extension for VS Code that provides Python language support. Refer to the [Pylance extension documentation](https://marketplace.visualstudio.com/items?WT.mc_id=academic-17441-jabenn&itemName=ms-python.vscode-pylance) for instructions on installing this extension in VS Code.
 
 The instructions to install and configure the CounterFit app will be given at the relevant time in the assignment instructions as it is installed on a per-project basis.
 
@@ -30,13 +30,15 @@ This app will be in a folder called `nightlight`, and it will be re-used with di
 
 ### Configure a Python virtual environment
 
-One of the powerful features of Python is the ability to install [pip packages](https://pypi.org) - these are packages of code written by other people and published to the Internet. You can install a pip package onto your computer with one command, then use that package in your code. You'll be using pip to install a package to talk to CounterFit.
+One of the powerful features of Python is the ability to install [Pip packages](https://pypi.org) - these are packages of code written by other people and published to the Internet. You can install a Pip package onto your computer with one command, then use that package in your code. You'll be using Pip to install a package to talk to CounterFit.
 
-By default when you install a package it is available everywhere on your computer, and this can lead to problems with package versions - such as one application depending on one version of a package that breaks when you install a new version for a different application. To work around this problem, you can use a [Python virtual environment](https://docs.python.org/3/library/venv.html), essentially a copy of Python in a dedicated folder, and when you install pip packages they get installed just to that folder.
+By default when you install a package it is available everywhere on your computer, and this can lead to problems with package versions - such as one application depending on one version of a package that breaks when you install a new version for a different application. To work around this problem, you can use a [Python virtual environment](https://docs.python.org/3/library/venv.html), essentially a copy of Python in a dedicated folder, and when you install Pip packages they get installed just to that folder.
+
+> 💁 If you are using a Raspberry Pi then you didn't set up a virtual environment on that device to manage Pip packages, instead you are using global packages, as the Grove packages are installed globally by the installer script.
 
 #### Task - configure a Python virtual environment
 
-Configure a Python virtual environment and install the pip packages for CounterFit.
+Configure a Python virtual environment and install the Pip packages for CounterFit.
 
 1. From your terminal or command line, run the following at a location of your choice to create and navigate to a new directory:
 
@@ -55,17 +57,36 @@ Configure a Python virtual environment and install the pip packages for CounterF
 
 1. Activate the virtual environment:
 
-    * On Windows run:
+    * On Windows:
+        * If you are using the Command Prompt, or the Command Prompt through Windows Terminal, run:
 
-        ```cmd
-        .venv\Scripts\activate.bat
-        ```
+            ```cmd
+            .venv\Scripts\activate.bat
+            ```
+
+        * If you are using PowerShell, run:
+
+            ```powershell
+            .\.venv\Scripts\Activate.ps1
+            ```
+
+            > If you get an error about running scripts being disabled on this system, you will need to enable running scripts by setting an appropriate execution policy. You can do this by launching PowerShell as an administrator, then running the following command:
+
+            ```powershell
+            Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+            ```
+
+            Enter `Y` when asked to confirm. Then re-launch PowerShell and try again.
+
+            You can reset this execution policy at a later date if needed. You can read more on this in the [Execution Policies page on Microsoft Docs](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?WT.mc_id=academic-17441-jabenn).
 
     * On macOS or Linux, run:
 
         ```cmd
         source ./.venv/bin/activate
         ```
+
+    > 💁 These commands should be run from the same location you ran the command to create the virtual environment. You will never need to navigate into the `.venv` folder, you should always run the activate command and any commands to install packages or run code from the folder you were in when you created the virtual environment.
 
 1. Once the virtual environment has been activated, the default `python` command will run the version of Python that was used to create the virtual environment. Run the following to get the version:
 
@@ -82,7 +103,7 @@ Configure a Python virtual environment and install the pip packages for CounterF
 
     > 💁 Your Python version may be different - as long as it's version 3.6 or higher you are good. If not, delete this folder, install a newer version of Python and try again.
 
-1. Run the following commands to install the pip packages for CounterFit. These packages include the main CounterFit app as well as shims for Grove hardware. These shims allow you to write code as if you were programming using physical sensors and actuators from the Grove ecosystem but connected to virtual IoT devices.
+1. Run the following commands to install the Pip packages for CounterFit. These packages include the main CounterFit app as well as shims for Grove hardware. These shims allow you to write code as if you were programming using physical sensors and actuators from the Grove ecosystem but connected to virtual IoT devices.
 
     ```sh
     pip install CounterFit
@@ -138,7 +159,7 @@ Create a Python application to print `"Hello World"` to the console.
 
     If you don't have `.venv` as a prefix on the prompt, the virtual environment is not active in the terminal.
 
-1. Launch a new VS Code Terminal by selecting *Terminal -> New Terminal, or pressing `` CTRL+` ``. The new terminal will load the virtual environment, and the the call to activate this will appear in the terminal. The prompt will also have the name of the virtual environment (`.venv`):
+1. Launch a new VS Code Terminal by selecting *Terminal -> New Terminal, or pressing `` CTRL+` ``. The new terminal will load the virtual environment, and the call to activate this will appear in the terminal. The prompt will also have the name of the virtual environment (`.venv`):
 
     ```output
     ➜  nightlight source .venv/bin/activate
@@ -177,7 +198,7 @@ As a second 'Hello World' step, you will run the CounterFit app and connect your
 1. From the VS Code terminal, launch the CounterFit app with the following command:
 
     ```sh
-    CounterFit
+    counterfit
     ```
 
     The app will start running and open in your web browser:

@@ -12,7 +12,7 @@ This video gives an overview of the Azure speech services, covering speech to te
 
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/47)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/47)
 
 ## Introduction
 
@@ -42,7 +42,7 @@ Text translation has been a computer science problem that has been researched fo
 
 Text translation started out as a technology known as Machine Translation (MT), that can translate between different language pairs. MT works by substituting words in one language with another, adding techniques to select the correct ways of translating phrases or parts of sentences when a simple word-for-word translation doesn't make sense.
 
-> 🎓 When translators support translating between one language and another, these are know as *language pairs*. Different tools support different language pairs, and these may not be complete. For example, a translator may support English to Spanish as a language pair, and Spanish to Italian as a language pair, but not English to Italian.
+> 🎓 When translators support translating between one language and another, these are known as *language pairs*. Different tools support different language pairs, and these may not be complete. For example, a translator may support English to Spanish as a language pair, and Spanish to Italian as a language pair, but not English to Italian.
 
 For example, translating "Hello world" from English into French can be performed with a substitution - "Bonjour" for "Hello", and "le monde" for "world", leading to the correct translation of "Bonjour le monde".
 
@@ -161,7 +161,7 @@ How can machine translations benefit other IoT applications beyond smart devices
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/48)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/48)
 
 ## Review & Self Study
 

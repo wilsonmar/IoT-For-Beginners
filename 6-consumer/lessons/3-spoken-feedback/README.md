@@ -6,7 +6,7 @@
 
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/45)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/45)
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Text to speech systems typically have 3 stages:
 
 ### Text analysis
 
-Text analysis involves taking the text provided, and converting into words that can be used to generate speech. For example, if you convert "Hello world", there there is no text analysis needed, the two words can be converted to speech. If you have "1234" however, then this might need to be converted either into the words "One thousand, two hundred thirty four" or "One, two, three, four" depending on the context. For "I have 1234 apples", then it would be "One thousand, two hundred thirty four", but for "The child counted 1234" then it would be "One, two, three, four".
+Text analysis involves taking the text provided, and converting into words that can be used to generate speech. For example, if you convert "Hello world", there is no text analysis needed, the two words can be converted to speech. If you have "1234" however, then this might need to be converted either into the words "One thousand, two hundred thirty four" or "One, two, three, four" depending on the context. For "I have 1234 apples", then it would be "One thousand, two hundred thirty four", but for "The child counted 1234" then it would be "One, two, three, four".
 
 The words created vary not only for the language, but the locale of that language. For example, in American English, 120 would be "One hundred twenty", in British English it would be "One hundred and twenty", with the use of "and" after the hundreds.
 
@@ -115,7 +115,7 @@ SSML has ways to change how words are spoken, such as adding emphasis to certain
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/46)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/46)
 
 ## Review & Self Study
 

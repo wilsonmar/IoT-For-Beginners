@@ -24,9 +24,9 @@ Seeed Studios have very kindly made all the hardware available as easy to purcha
 
 ### Raspberry Pi
 
-**[IoT for beginners with Seeed and Microsoft - Raspberry Pi 4 Starter Kit](https://www.seeedstudio.com/IoT-for-beginners-with-Seeed-and-Microsoft-Raspberry-Pi-Starter-Kit.html)**
+**[IoT for beginners with Seeed and Microsoft - Raspberry Pi 4 Starter Kit](https://www.seeedstudio.com/IoT-for-beginners-with-Seeed-and-Microsoft-Raspberry-Pi-Starter-Kit-p-5004.html)**
 
-[![The Raspberry Pi Terminal hardware kit](./images/pi-hardware-kit.png)](https://www.seeedstudio.com/IoT-for-beginners-with-Seeed-and-Microsoft-Raspberry-Pi-Starter-Kit.html)
+[![The Raspberry Pi Terminal hardware kit](./images/pi-hardware-kit.png)](https://www.seeedstudio.com/IoT-for-beginners-with-Seeed-and-Microsoft-Raspberry-Pi-Starter-Kit-p-5004.html)
 
 ## Arduino
 
@@ -46,7 +46,7 @@ These are specific to using the Wio terminal Arduino device, and are not relevan
 * [Breadboard Jumper Wires](https://www.seeedstudio.com/Breadboard-Jumper-Wire-Pack-241mm-200mm-160mm-117m-p-234.html)
 * Headphones or other speaker with a 3.5mm jack, or a JST speaker such as:
   * [Mono Enclosed Speaker - 2W 6 Ohm](https://www.seeedstudio.com/Mono-Enclosed-Speaker-2W-6-Ohm-p-2832.html)
-* *Optional* - microSD Card 16GB or less for testing image capture, along with a connector to use the SD card with your computer if you don't have one built-in. **NOTE** - the Wio Terminal only supports SD cards up to 16GB, it does not support higher capacities.
+* microSD Card 16GB or less, along with a connector to use the SD card with your computer if you don't have one built-in. **NOTE** - the Wio Terminal only supports SD cards up to 16GB, it does not support higher capacities.
 
 ## Raspberry Pi
 
@@ -55,7 +55,7 @@ All the device code for Raspberry Pi is in Python. To complete all the assignmen
 ### Raspberry Pi hardware
 
 * [Raspberry Pi](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
-  > 💁 Versions from the Pi 2B and above should work with the assignments in these lessons.
+  > 💁 Versions from the Pi 2B and above should work with the assignments in these lessons. If you are planning on running VS Code directly on the Pi, then a Pi 4 with 2GB or more of RAM is needed. If you are going to access the Pi remotely then any Pi 2B and above will work.
 * microSD Card (You can get Raspberry Pi kits that come with a microSD Card), along with a connector to use the SD card with your computer if you don't have one built-in.
 * USB power supply (You can get Raspberry Pi 4 kits that come with a power supply). If you are using a Raspberry Pi 4 you need a USB-C power supply, earlier devices need a micro-USB power supply.
 

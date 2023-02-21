@@ -10,7 +10,7 @@ This video gives an overview of running image classifiers on IoT devices, the to
 
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/33)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/33)
 
 ## Introduction
 
@@ -71,7 +71,7 @@ There are downsides to edge computing, where the cloud may be a preferred option
 
 1. **Scale and flexibility** - cloud computing can adjust to network and data needs in real-time by adding or reducing servers and other resources. To add more edge computers requires manually adding more devices.
 
-1. **Reliability and resiliency** - cloud computing provides multiple servers often in multiple locations for redundancy and disaster recovery. To have the same level of redundancy on the edge requires large investments and a lor of configuration work.
+1. **Reliability and resiliency** - cloud computing provides multiple servers often in multiple locations for redundancy and disaster recovery. To have the same level of redundancy on the edge requires large investments and a lot of configuration work.
 
 1. **Maintenance** - cloud service providers provide system maintenance and updates.
 
@@ -208,9 +208,11 @@ The container registry you will use for this lesson is Azure Container Registry.
 
 ### Task - install Docker
 
-To build and deploy the classifier classifier, you'll need to install [Docker](https://www.docker.com/).
+To build and deploy the classifier classifier, you may need to install [Docker](https://www.docker.com/).
 
-1. Follow the Docker installation instructions on the [Docker install page](https://www.docker.com/products/docker-desktop) to install Docker Desktop or the Docker engine. Ensure it is running after installation.
+You will only need to do this if you plan to build your container from a different device that the one you installed IoT Edge on - as part of installing IoT Edge, Docker is installed for you.
+
+1. If you building the docker container on a different device from your IoT Edge device, follow the Docker installation instructions on the [Docker install page](https://www.docker.com/products/docker-desktop) to install Docker Desktop or the Docker engine. Ensure it is running after installation.
 
 ### Task - create a container registry resource
 
@@ -267,13 +269,13 @@ What you downloaded from Custom Vision was a DockerFile containing instructions 
     docker build --platform <platform> -t <Container registry name>.azurecr.io/classifier:v1 .
     ```
 
-    Replace `<platform>` with the platform that this container will run on. If you are running IoT Edge on a Raspberry Pi, set this to `linux/arm64`, otherwise set this to `linux/amd64`.
+    Replace `<platform>` with the platform that this container will run on. If you are running IoT Edge on a Raspberry Pi, set this to `linux/armhf`, otherwise set this to `linux/amd64`.
 
     > 💁 If you are running this command from the device you are running IoT Edge from, such as running this from your Raspberry Pi, you can omit the `--platform <platform>` part as it defaults to the current platform.
 
     Replace `<Container registry name>` with the name you used for your container registry.
 
-    > 💁 If you are running Linux you nay need to use `sudo` to run this command.
+    > 💁 If you are running on Linux or Raspberry Pi OS you nay need to use `sudo` to run this command.
 
     Docker will build the image, configuring all the software needed. The image will then be tagged as `classifier:v1`.
 
@@ -463,7 +465,7 @@ Your container can now be deployed to your IoT Edge device. To deploy you need t
 1. Connect to the IoT edge device:
 
     * If you are using a Raspberry Pi to run IoT Edge, connect using ssh either from your terminal, or via a remote SSH session in VS Code
-    * If you are running IoT Edge in a Linux container on Windows, follow the steps in the [verify successful configuration guide](https://docs.microsoft.com/azure/iot-edge/how-to-install-iot-edge-on-windows?view=iotedge-2018-06&tabs=powershell&WT.mc_id=academic-17441-jabenn#verify-successful-configuration) to connect to the IoT Edge device.
+    * If you are running IoT Edge in a Linux container on Windows, follow the steps in the [verify successful configuration guide](https://docs.microsoft.com/azure/iot-edge/how-to-install-iot-edge-on-windows?WT.mc_id=academic-17441-jabenn&view=iotedge-2018-06&tabs=powershell#verify-successful-configuration) to connect to the IoT Edge device.
     * If you are running IoT Edge on a virtual machine, you can SSH into the machine using the `adminUsername` and `password` you set when creating the VM, and using either the IP address or DNS name:
 
         ```sh
@@ -598,7 +600,7 @@ Do some timings and compare if the call to your edge device is faster or slower 
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/34)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/34)
 
 ## Review & Self Study
 

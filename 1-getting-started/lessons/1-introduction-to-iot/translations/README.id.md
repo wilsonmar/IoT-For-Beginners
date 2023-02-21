@@ -6,11 +6,11 @@
 
 ## Kuis prakuliah
 
-[Kuis prakuliah](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/1)
+[Kuis prakuliah](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/1)
 
 ## Pengantar
 
-Pelajaran ini mencakup beberapa topok pengantar mengenai Internet of Things, dan membuat Anda dapat mempersiapkan dan mengatur perangkat keras Anda.
+Pelajaran ini mencakup beberapa topik pengantar mengenai Internet of Things, dan membuat Anda dapat mempersiapkan dan mengatur perangkat keras Anda.
 
 Dalam pelajaran ini kita akan membahas:
 

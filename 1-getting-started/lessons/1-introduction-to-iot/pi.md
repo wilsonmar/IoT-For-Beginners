@@ -31,7 +31,7 @@ If you want to work directly on your Pi, you can use the desktop version of Rasp
 
 Set up your Pi for development.
 
-1. Follow the instructions in the [Raspberry Pi setup guide](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) to set up your Pi, connect it to a keyboard/mouse/monitor, connect it to your WiFi or ethernet network, and update the software. The OS you want to install is **Raspberry Pi OS (32 bit)**, it is marked as the recommended OS when using the Raspberry Pi Imager to image your SD card.
+1. Follow the instructions in the [Raspberry Pi setup guide](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) to set up your Pi, connect it to a keyboard/mouse/monitor, connect it to your WiFi or ethernet network, and update the software.
 
 To program the Pi using the Grove sensors and actuators, you will need to install an editor to allow you to write the device code, and various libraries and tools that interact with the Grove hardware.
 
@@ -43,13 +43,27 @@ To program the Pi using the Grove sensors and actuators, you will need to instal
     sudo apt update && sudo apt full-upgrade --yes
     ```
 
-1. Run the following command to install all the needed libraries for the Grove hardware:
+1. Run the following commands to install all the needed libraries for the Grove hardware:
 
     ```sh
-    curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -
+    sudo apt install git python3-dev python3-pip --yes
+
+    git clone https://github.com/Seeed-Studio/grove.py
+    cd grove.py
+    sudo pip3 install .
+
+    sudo raspi-config nonint do_i2c 0
     ```
 
-    One of the powerful features of Python is the ability to install [pip packages](https://pypi.org) - these are packages of code written by other people and published to the Internet. You can install a pip package onto your computer with one command, then use that package in your code. This Grove install script will install the pip packages you will use to work with the Grove hardware from Python.
+    This starts by installing Git, along with Pip to install Python packages.
+
+    One of the powerful features of Python is the ability to install [Pip packages](https://pypi.org) - these are packages of code written by other people and published to the Internet. You can install a Pip package onto your computer with one command, then use that package in your code.
+
+    The Seeed Grove Python packages need to be installed from source. These commands will clone the repo containing the source code for this package, then install it locally.
+
+    > 💁 By default when you install a package it is available everywhere on your computer, and this can lead to problems with package versions - such as one application depending on one version of a package that breaks when you install a new version for a different application. To work around this problem, you can use a [Python virtual environment](https://docs.python.org/3/library/venv.html), essentially a copy of Python in a dedicated folder, and when you install Pip packages they get installed just to that folder. You won't be using virtual environments when using your Pi. The Grove install script installs the Grove Python packages globally, so to use a virtual environment you would need to set up a virtual environment then manually re-install the Grove packages inside that environment. It's easier to just use global packages, especially as a lot of Pi developers will re-flash a clean SD card for each project.
+
+    Finally, this enables the I<sup>2</sup>C interface.
 
 1. Reboot the Pi either using the menu or running the following command in the Terminal:
 
@@ -67,7 +81,7 @@ To program the Pi using the Grove sensors and actuators, you will need to instal
 
     > 💁 You are free to use any Python IDE or editor for these lessons if you have a preferred tool, but the lessons will give instructions based off using VS Code.
 
-1. Install Pylance. This is an extension for VS Code that provides Python language support. Refer to the [Pylance extension documentation](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance&WT.mc_id=academic-17441-jabenn) for instructions on installing this extension in VS Code.
+1. Install Pylance. This is an extension for VS Code that provides Python language support. Refer to the [Pylance extension documentation](https://marketplace.visualstudio.com/items?WT.mc_id=academic-17441-jabenn&itemName=ms-python.vscode-pylance) for instructions on installing this extension in VS Code.
 
 ### Remote access to code the Pi
 
@@ -107,7 +121,7 @@ Set up the headless Pi OS.
 
 1. Select the **WRITE** button to write the OS to the SD card. If you are using macOS, you will be asked to enter your password as the underlying tool that writes disk images needs privileged access.
 
-The OS will be written to the SD card, and once complete the card will be ejected by the OS, and you will be notified. Remove the SD card from your computer, insert it into the Pi and power up the Pi.
+The OS will be written to the SD card, and once complete the card will be ejected by the OS, and you will be notified. Remove the SD card from your computer, insert it into the Pi, power up the Pi and wait for about 2 mins for it to properly boot.
 
 #### Connect to the Pi
 
@@ -157,13 +171,27 @@ Configure the installed Pi software and install the Grove libraries.
 
     The Pi will be updated and rebooted. The `ssh` session will end when the Pi is rebooted, so leave it for about 30 seconds then reconnect.
 
-1. From the reconnected `ssh` session, run the following command to install all the needed libraries for the Grove hardware:
+1. From the reconnected `ssh` session, run the following commands to install all the needed libraries for the Grove hardware:
 
     ```sh
-    curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -
+    sudo apt install git python3-dev python3-pip --yes
+
+    git clone https://github.com/Seeed-Studio/grove.py
+    cd grove.py
+    sudo pip3 install .
+
+    sudo raspi-config nonint do_i2c 0
     ```
 
-    One of the powerful features of Python is the ability to install [pip packages](https://pypi.org) - these are packages of code written by other people and published to the Internet. You can install a pip package onto your computer with one command, then use that package in your code. This Grove install script will install the pip packages you will use to work with the Grove hardware from Python.
+    This starts by installing Git, along with Pip to install Python packages.
+
+    One of the powerful features of Python is the ability to install [Pip packages](https://pypi.org) - these are packages of code written by other people and published to the Internet. You can install a Pip package onto your computer with one command, then use that package in your code.
+
+    The Seeed Grove Python packages need to be installed from source. These commands will clone the repo containing the source code for this package, then install it locally.
+
+    > 💁 By default when you install a package it is available everywhere on your computer, and this can lead to problems with package versions - such as one application depending on one version of a package that breaks when you install a new version for a different application. To work around this problem, you can use a [Python virtual environment](https://docs.python.org/3/library/venv.html), essentially a copy of Python in a dedicated folder, and when you install Pip packages they get installed just to that folder. You won't be using virtual environments when using your Pi. The Grove install script installs the Grove Python packages globally, so to use a virtual environment you would need to set up a virtual environment then manually re-install the Grove packages inside that environment. It's easier to just use global packages, especially as a lot of Pi developers will re-flash a clean SD card for each project.
+
+    Finally, this enables the I<sup>2</sup>C interface.
 
 1. Reboot the Pi by running the following command:
 
@@ -187,7 +215,7 @@ Install the required software and connect remotely to your Pi.
 
 1. Following the same instructions, connect VS Code to the Pi
 
-1. Once connected, follow the [managing extensions](https://code.visualstudio.com/docs/remote/ssh#_managing-extensions?WT.mc_id=academic-17441-jabenn) instructions to install the [Pylance extension](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance&WT.mc_id=academic-17441-jabenn) remotely onto the Pi
+1. Once connected, follow the [managing extensions](https://code.visualstudio.com/docs/remote/ssh#_managing-extensions?WT.mc_id=academic-17441-jabenn) instructions to install the [Pylance extension](https://marketplace.visualstudio.com/items?WT.mc_id=academic-17441-jabenn&itemName=ms-python.vscode-pylance) remotely onto the Pi
 
 ## Hello world
 
@@ -228,10 +256,10 @@ Create the Hello World app.
 1. From the VS Code Terminal, run the following to run your Python app:
 
     ```sh
-    python3 app.py
+    python app.py
     ```
 
-    > 💁 You need to explicitly call `python3` to run this code just in case you have Python 2 installed in addition to Python 3 (the latest version). If you have Python2 installed then calling `python` will use Python 2 instead of Python 3
+    > 💁 You may need to explicitly call `python3` to run this code if you have Python 2 installed in addition to Python 3 (the latest version). If you have Python2 installed then calling `python` will use Python 2 instead of Python 3. By default, the latest Raspberry Pi OS versions only have Python 3 installed.
 
     The following output will appear in the terminal:
 

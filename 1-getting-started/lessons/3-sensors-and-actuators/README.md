@@ -4,9 +4,17 @@
 
 > Sketchnote by [Nitya Narasimhan](https://github.com/nitya). Click the image for a larger version.
 
+This lesson was taught as part of the [Hello IoT series](https://youtube.com/playlist?list=PLmsFUfdnGr3xRts0TIwyaHyQuHaNQcb6-) from the [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=academic-17441-jabenn). The lesson was taught as 2 videos - a 1 hour lesson, and a 1 hour office hour diving deeper into parts of the lesson and answering questions.
+
+[![Lesson 3: Interact with the Physical World with Sensors and Actuators](https://img.youtube.com/vi/Lqalu1v6aF4/0.jpg)](https://youtu.be/Lqalu1v6aF4)
+
+[![Lesson 3: Interact with the Physical World with Sensors and Actuators - Office hours](https://img.youtube.com/vi/qR3ekcMlLWA/0.jpg)](https://youtu.be/qR3ekcMlLWA)
+
+> 🎥 Click the images above to watch the videos
+
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/5)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/5)
 
 ## Introduction
 
@@ -27,8 +35,8 @@ Sensors are hardware devices that sense the physical world - that is they measur
 
 Some common sensors include:
 
-* Temperature sensors - these sense the air temperature or the temperature of what they are immersed in. For hobbyists and developer, these are often combined with air pressure and humidity in a single sensor.
-* Buttons - they sense when they have been pressed.
+* Temperature sensors - these sense the air temperature or the temperature of what they are immersed in. For hobbyists and developers, these are often combined with air pressure and humidity in a single sensor.
+* Buttons - these sense when they have been pressed.
 * Light sensors - these detect light levels and can be for specific colors, UV light, IR light, or general visible light.
 * Cameras - these sense a visual representation of the world by taking a photograph or streaming video.
 * Accelerometers - these sense movement in multiple directions.
@@ -137,7 +145,8 @@ One example is a dimmable light, such as the ones you might have in your house. 
 
 Like with sensors, the actual IoT device works on digital signals, not analog. This means to send an analog signal, the IoT device needs a digital to analog converter (DAC), either on the IoT device directly, or on a connector board. This will convert the 0s and 1s from the IoT device to an analog voltage that the actuator can use.
 
-✅ What do you think happens if the IoT device sends a higher voltage than the actuator can handle? ⛔️ DO NOT test this out.
+✅ What do you think happens if the IoT device sends a higher voltage than the actuator can handle?
+⛔️ DO NOT test this out.
 
 #### Pulse-Width Modulation
 
@@ -149,7 +158,7 @@ Imagine you are controlling a motor with a 5V supply. You send a short pulse to 
 
 ![Pule width modulation rotation of a motor at 150 RPM](../../../images/pwm-motor-150rpm.png)
 
-This means in one second you have 25 5V pulses of 0.02s that rotate the motor, each followed by 0.02s pause of 0V not rotating the motor. Each pulse rotates the motor one tenth of a rotation, meaning the motor completes 2.5 rotations per second. You've used a digital signal to rotate the motor at 2.5 rotations per second, or 150 ([revolutions per minute](https://wikipedia.org/wiki/Revolutions_per_minute), a non-standard measure of rotational velocity).
+This means in one second you have 25 5V pulses of 0.02s that rotate the motor, each followed by 0.02s pause of 0V not rotating the motor. Each pulse rotates the motor one tenth of a rotation, meaning the motor completes 2.5 rotations per second. You've used a digital signal to rotate the motor at 2.5 rotations per second, or 150 [revolutions per minute](https://wikipedia.org/wiki/Revolutions_per_minute) (a non-standard measure of rotational velocity).
 
 ```output
 25 pulses per second x 0.1 rotations per pulse = 2.5 rotations per second
@@ -195,11 +204,11 @@ For every device you listed, what sensors and actuators are they connected to? W
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/6)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/6)
 
 ## Review & Self Study
 
-* Read up on electricity and circuits on [ThingLearn](http://www.thinglearn.com/essentials/).
+* Read up on electricity and circuits on [ThingLearn](http://thinglearn.jenlooper.com/curriculum/).
 * Read about the different types of temperature sensors on the [Seeed Studios Temperature Sensors guide](https://www.seeedstudio.com/blog/2019/10/14/temperature-sensors-for-arduino-projects/)
 * Read about LEDs on the [Wikipedia LED page](https://wikipedia.org/wiki/Light-emitting_diode)
 

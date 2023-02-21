@@ -4,9 +4,17 @@
 
 > Sketchnote by [Nitya Narasimhan](https://github.com/nitya). Click the image for a larger version.
 
+This lesson was taught as part of the [Hello IoT series](https://youtube.com/playlist?list=PLmsFUfdnGr3xRts0TIwyaHyQuHaNQcb6-) from the [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=academic-17441-jabenn). The lesson was taught as 2 videos - a 1 hour lesson, and a 1 hour office hour diving deeper into parts of the lesson and answering questions.
+
+[![Lesson 4: Connect your Device to the Internet](https://img.youtube.com/vi/O4dd172mZhs/0.jpg)](https://youtu.be/O4dd172mZhs)
+
+[![Lesson 4: Connect your Device to the Internet - Office hours](https://img.youtube.com/vi/j-cVCzRDE2Q/0.jpg)](https://youtu.be/j-cVCzRDE2Q)
+
+> 🎥 Click the images above to watch the videos
+
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/7)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/7)
 
 ## Introduction
 
@@ -116,7 +124,7 @@ The cloud service can then use this telemetry data to make decisions around what
 
 The next part in adding Internet control to your nightlight is sending the light level telemetry to the MQTT broker on a telemetry topic.
 
-#### Task
+#### Task - send telemetry from your IoT device
 
 Send light level telemetry to the MQTT broker.
 
@@ -137,9 +145,9 @@ There's no point in sending telemetry if there's nothing on the other end to lis
 
 #### Install Python and VS Code
 
-If you don't have Python and VS Code installed locally, you will need to install them both to code the server. If you are using a virtual device, or are working on your Raspberry Pi you can skip this step.
+If you don't have Python and VS Code installed locally, you will need to install them both to code the server. If you are using a virtual IoT device, or are working on your Raspberry Pi you can skip this step as you should already have this installed and configured.
 
-##### Task
+##### Task - install Python and VS Code
 
 Install Python and VS Code.
 
@@ -149,7 +157,7 @@ Install Python and VS Code.
 
     > 💁 You are free to use any Python IDE or editor for these lessons if you have a preferred tool, but the lessons will give instructions based off using VS Code.
 
-1. Install the VS Code Pylance extension. This is an extension for VS Code that provides Python language support. Refer to the [Pylance extension documentation](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance&WT.mc_id=academic-17441-jabenn) for instructions on installing this extension in VS Code.
+1. Install the VS Code Pylance extension. This is an extension for VS Code that provides Python language support. Refer to the [Pylance extension documentation](https://marketplace.visualstudio.com/items?WT.mc_id=academic-17441-jabenn&itemName=ms-python.vscode-pylance) for instructions on installing this extension in VS Code.
 
 #### Configure a Python virtual environment
 
@@ -157,7 +165,7 @@ One of the powerful features of Python is the ability to install [pip packages](
 
 By default when you install a package it is available everywhere on your computer, and this can lead to problems with package versions - such as one application depending on one version of a package that breaks when you install a new version for a different application. To work around this problem, you can use a [Python virtual environment](https://docs.python.org/3/library/venv.html), essentially a copy of Python in a dedicated folder, and when you install pip packages they get installed just to that folder.
 
-##### Task
+##### Task - configure a Python virtual environment
 
 Configure a Python virtual environment and install the MQTT pip packages.
 
@@ -178,17 +186,26 @@ Configure a Python virtual environment and install the MQTT pip packages.
 
 1. Activate the virtual environment:
 
-    * On Windows run:
+    * On Windows:
+        * If you are using the Command Prompt, or the Command Prompt through Windows Terminal, run:
 
-        ```cmd
-        .venv\Scripts\activate.bat
-        ```
+            ```cmd
+            .venv\Scripts\activate.bat
+            ```
+
+        * If you are using PowerShell, run:
+
+            ```powershell
+            .\.venv\Scripts\Activate.ps1
+            ```
 
     * On macOS or Linux, run:
 
         ```cmd
         source ./.venv/bin/activate
         ```
+
+    > 💁 These commands should be run from the same location you ran the command to create the virtual environment. You will never need to navigate into the `.venv` folder, you should always run the activate command and any commands to install packages or run code from the folder you were in when you created the virtual environment.
 
 1. Once the virtual environment has been activated, the default `python` command will run the version of Python that was used to create the virtual environment. Run the following to get the version:
 
@@ -217,7 +234,7 @@ Configure a Python virtual environment and install the MQTT pip packages.
 
 The server code can now be written in Python.
 
-##### Task
+##### Task - write the server code
 
 Write the server code.
 
@@ -252,7 +269,7 @@ Write the server code.
 1. Launch a new VS Code Terminal by selecting *Terminal -> New Terminal, or pressing `` CTRL+` ``. The new terminal will load the virtual environment, with the call to activate this appearing in the terminal. The name of the virtual environment (`.venv`) will also be in the prompt:
 
     ```output
-    ➜  nightlight source .venv/bin/activate
+    ➜  nightlight-server source .venv/bin/activate
     (.venv) ➜  nightlight 
     ```
 
@@ -417,7 +434,7 @@ For these devices, think about what messages they might be sending or receiving.
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/8)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/8)
 
 ## Review & Self Study
 

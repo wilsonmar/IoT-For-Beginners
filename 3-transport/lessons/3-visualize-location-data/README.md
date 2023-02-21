@@ -12,7 +12,7 @@ This video gives an overview of Azure Maps with IoT, a service that will be cove
 
 ## Pre-lecture quiz
 
-[Pre-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/25)
+[Pre-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/25)
 
 ## Introduction
 
@@ -88,11 +88,11 @@ Working with maps is an interesting exercise, and there are many to choose from 
 
 Azure Maps is "a collection of geospatial services and SDKs that use fresh mapping data to provide geographic context to web and mobile applications." Developers are provided with tools to create beautiful, interactive maps that can do things like provide recommended traffic routes, give information about traffic incidents, indoor navigation, search capabilities, elevation information, weather services and more.
 
-✅ Experiment with some [mapping code samples](https://docs.microsoft.com/samples/browse/?products=azure-maps&WT.mc_id=academic-17441-jabenn)
+✅ Experiment with some [mapping code samples](https://docs.microsoft.com/samples/browse?WT.mc_id=academic-17441-jabenn&products=azure-maps)
 
 You can display the maps as a blank canvas, tiles, satellite images, satellite images with roads superimposed, various types of grayscale maps, maps with shaded relief to show elevation, night view maps, and a high contrast map. You can get real-time updates on your maps by integrating them with [Azure Event Grid](https://azure.microsoft.com/services/event-grid/?WT.mc_id=academic-17441-jabenn). You can control the behavior and look of your maps by enabling various controls to allow the map to react to events like pinch, drag, and click. To control the look of your map, you can add layers that include bubbles, lines, polygons, heat maps, and more. Which style of map you implement depends on your choice of SDK.
 
-You can access Azure Maps APIs by leveraging its [REST API](https://docs.microsoft.com/javascript/api/azure-maps-rest/?view=azure-maps-typescript-latest&WT.mc_id=academic-17441-jabenn), its [Web SDK](https://docs.microsoft.com/azure/azure-maps/how-to-use-map-control?WT.mc_id=academic-17441-jabenn), or, if you are building a mobile app, its [Android SDK](https://docs.microsoft.com/azure/azure-maps/how-to-use-android-map-control-library?pivots=programming-language-java-android&WT.mc_id=academic-17441-jabenn).
+You can access Azure Maps APIs by leveraging its [REST API](https://docs.microsoft.com/javascript/api/azure-maps-rest/?WT.mc_id=academic-17441-jabenn&view=azure-maps-typescript-latest), its [Web SDK](https://docs.microsoft.com/azure/azure-maps/how-to-use-map-control?WT.mc_id=academic-17441-jabenn), or, if you are building a mobile app, its [Android SDK](https://docs.microsoft.com/azure/azure-maps/how-to-use-android-map-control-library?WT.mc_id=academic-17441-jabenn&pivots=programming-language-java-android).
 
 In this lesson, you will use the web SDK to draw a map and display your sensor's GPS location's path.
 
@@ -332,7 +332,7 @@ It's nice to be able to display static data on a map as markers. Can you enhance
 
 ## Post-lecture quiz
 
-[Post-lecture quiz](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/26)
+[Post-lecture quiz](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/26)
 
 ## Review & Self Study
 

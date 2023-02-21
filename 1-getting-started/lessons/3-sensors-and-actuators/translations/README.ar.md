@@ -3,7 +3,7 @@
 ##  <div dir="rtl"> اختبار ما قبل المحاضرة </div>
 
 
-[<div dir="rtl"> اختبار ما قبل المحاضرة </div>](https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/5)
+[<div dir="rtl"> اختبار ما قبل المحاضرة </div>](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/5)
 
 ##  <div dir="rtl"> المقدمة </div>
 
@@ -195,11 +195,11 @@
 
 ## اختبار ما بعد المحاضرة
 
-<a href="https://brave-island-0b7c7f50f.azurestaticapps.net/quiz/6">اختبار ما بعد المحاضرة</a>
+<a href="https://black-meadow-040d15503.1.azurestaticapps.net/quiz/6">اختبار ما بعد المحاضرة</a>
 
 ## مراجعة ودراسة ذاتية
 
-* اقرأ عن الكهرباء والدوائر على <a href="http://www.thinglearn.com/essentials/">ThingLearn</a>.
+* اقرأ عن الكهرباء والدوائر على <a href="http://thinglearn.jenlooper.com/curriculum/">ThingLearn</a>.
 * اقرأ عن الأنواع المختلفة من مستشعرات درجة الحرارة في <a href="https://www.seeedstudio.com/blog/2019/10/14/temperature-sensors-for-arduino-projects/">دليل مستشعرات درجة الحرارة في الاستوديوها</a> 
 * اقرأ عن مصابيح LED على <a href="https://wikipedia.org/wiki/Light-emitting_diode">صفحة Wikipedia LED</a> 
 
